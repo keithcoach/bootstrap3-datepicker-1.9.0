@@ -9,8 +9,15 @@ All rights to eternicode/bootstrap-datepicker are with the original author
 
 Example
 ============
-in handlebars template
+In your handlebars template:
+
+    <input type="text" class="form-control" id="my-datepicker">
+
+In client-side JS code:
 
     Template.mytemplate.rendered=function() {
-    	$('.datepicker').datepicker();
+    	$('#my-datepicker').datepicker();
     }
+
+See http://eternicode.github.io/bootstrap-datepicker/ for more
+
