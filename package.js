@@ -1,10 +1,14 @@
 Package.describe({
-  summary: ''
+  name: "rajit:bootstrap3-datepicker",
+  git: "https://github.com/rajit/bootstrap3-datepicker.git",
+  summary: "Meteor packaging of eternicode/bootstrap-datepicker for Bootstrap 3",
+  "version": "1.3.1"
 });
 
-Package.on_use(function (api, where) {
+Package.onUse(function (api) {
+  api.versionsFrom('0.9.0');
   api.use('jquery', 'client');
     
-  api.add_files('lib/bootstrap-datepicker/js/bootstrap-datepicker.js', 'client');
-  api.add_files('lib/bootstrap-datepicker/css/datepicker3.css', 'client');
+  api.addFiles('lib/bootstrap-datepicker/js/bootstrap-datepicker.js', 'client');
+  api.addFiles('lib/bootstrap-datepicker/css/datepicker3.css', 'client');
 });
