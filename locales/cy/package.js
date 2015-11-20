@@ -2,7 +2,7 @@ Package.describe({
   name: "rajit:bootstrap3-datepicker-cy",
   git: "https://github.com/rajit/bootstrap3-datepicker.git",
   summary: "Meteor packaging of Welsh translation of eternicode/bootstrap-datepicker",
-  version: "1.4.1",
+  version: "1.5.0",
   documentation: 'README.md'
 });
 
