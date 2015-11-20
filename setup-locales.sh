@@ -70,7 +70,6 @@ Package.onUse(function (api) {
   api.versionsFrom('0.9.0');
   api.use('jquery', 'client');
   api.use('rajit:bootstrap3-datepicker@1.5.0', 'client');
-    
   api.addFiles('bootstrap-datepicker.$locale_id.min.js', 'client');
 });
 EOL
