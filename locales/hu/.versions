@@ -1,4 +1,5 @@
-jquery@1.11.3_2
-meteor@1.1.6
-rajit:bootstrap3-datepicker-hu@1.4.1
-underscore@1.0.3
+jquery@1.11.4
+meteor@1.1.10
+rajit:bootstrap3-datepicker@1.5.0
+rajit:bootstrap3-datepicker-hu@1.5.0
+underscore@1.0.4
