@@ -2,7 +2,7 @@ Package.describe({
   name: "rajit:bootstrap3-datepicker",
   git: "https://github.com/rajit/bootstrap3-datepicker.git",
   summary: "Meteor packaging of uxsolutions/bootstrap-datepicker for Bootstrap 3",
-  version: "1.7.1",
+  version: "1.7.1_1",
   documentation: 'README.md'
 });
 
