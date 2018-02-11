@@ -24,6 +24,10 @@ cat locales.cfg | while read -r locale; do
   locale_id=$(echo "$locale" | cut -f 2)
   meteor_locale_id=$(echo "$locale_id" | awk '{print tolower($0)}')
 
+  if [ ! -d locales/$locale_id ]; then
+    mkdir locales/$locale_id
+  fi
+
   # copy file:
   #  - from bootstrap-datepicker git submodule
   #  - to Meteor locale package location
@@ -33,11 +37,11 @@ cat locales.cfg | while read -r locale; do
 bootstrap3-datepicker-$meteor_locale_id
 ============
 
-Meteor packaging of $locale_description translation of eternicode/bootstrap-datepicker
+Meteor packaging of $locale_description translation of uxsolutions/bootstrap-datepicker
 
 This package is MIT Licensed. Do whatever you like with it but any responsibility for doing so is your own.
 
-All rights to eternicode/bootstrap-datepicker are with the original author
+All rights to uxsolutions/bootstrap-datepicker are with the original author
 
 Example
 ============
@@ -53,7 +57,7 @@ In client-side JS code:
       });
     }
 
-See http://eternicode.github.io/bootstrap-datepicker/ for more
+See http://uxsolutions.github.io/bootstrap-datepicker/ for more
 EOL
 
   # create package.js for $locale_description and $locale_id
@@ -61,15 +65,15 @@ EOL
 Package.describe({
   name: "rajit:bootstrap3-datepicker-$meteor_locale_id",
   git: "https://github.com/rajit/bootstrap3-datepicker.git",
-  summary: "Meteor packaging of $locale_description translation of eternicode/bootstrap-datepicker",
-  version: "1.6.4",
+  summary: "Meteor packaging of $locale_description translation of uxsolutions/bootstrap-datepicker",
+  version: "1.7.1",
   documentation: 'README.md'
 });
 
 Package.onUse(function (api) {
   api.versionsFrom('0.9.0');
   api.use('jquery', 'client');
-  api.use('rajit:bootstrap3-datepicker@1.6.4', 'client');
+  api.use('rajit:bootstrap3-datepicker@1.7.1', 'client');
   api.addFiles('bootstrap-datepicker.$locale_id.min.js', 'client');
 });
 EOL

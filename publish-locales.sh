@@ -35,6 +35,22 @@ fi
 
 original_pwd=$PWD
 
+# cat <<EOL |
+# Arabic-Tunisia	ar-tn
+# Bengali	bn
+# Breton	br
+# Canadian English	en-CA
+# Irish English	en-IE
+# New Zealand English	en-NZ
+# South African English	en-ZA
+# Hindi	hi
+# Occitan	oc
+# Tamil	ta
+# Tajik	tg
+# Uzbek (cyrillic)	uz-cyrl
+# Uzbek (latin)	uz-latn
+# EOL
+# while read -r locale; do
 cat locales.cfg | while read -r locale; do
   locale_description=$(echo "$locale" | cut -f 1)
   locale_id=$(echo "$locale" | cut -f 2)

@@ -1,11 +1,11 @@
 bootstrap3-datepicker-pt-br
 ============
 
-Meteor packaging of Brazilian translation of eternicode/bootstrap-datepicker
+Meteor packaging of Brazilian translation of uxsolutions/bootstrap-datepicker
 
 This package is MIT Licensed. Do whatever you like with it but any responsibility for doing so is your own.
 
-All rights to eternicode/bootstrap-datepicker are with the original author
+All rights to uxsolutions/bootstrap-datepicker are with the original author
 
 Example
 ============
@@ -21,4 +21,4 @@ In client-side JS code:
       });
     }
 
-See http://eternicode.github.io/bootstrap-datepicker/ for more
+See http://uxsolutions.github.io/bootstrap-datepicker/ for more
